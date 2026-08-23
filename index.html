@@ -2,83 +2,1570 @@
 <html lang="pt-PT">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#062d25">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
 <title>Atletismo — Núcleo SCP de Peniche</title>
+
 <meta name="description" content="Atletismo do Núcleo SCP de Peniche — Época 2026/2027. Todos juntos somos enormes.">
+<meta name="theme-color" content="#062d25">
+
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="images/logo-dourado.png">
+<link rel="apple-touch-icon" href="images/logo-dourado.png">
+
 <style>
-:root{--v:#062d25;--v2:#0b3b30;--g:#d0a64f;--g2:#e4bf6a;--c:#f4f0e7;--t:#18241f;--m:#cbd5d0;--l:rgba(208,166,79,.38)}
-*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Arial,Helvetica,sans-serif;background:var(--c);color:var(--t);line-height:1.55;overflow-x:hidden}a{text-decoration:none;color:inherit}.wrap{width:min(1160px,90%);margin:auto}.ey{font-size:10px;letter-spacing:3px;font-weight:900;color:var(--g);text-transform:uppercase;margin-bottom:16px}
-header{position:sticky;top:0;z-index:50;background:rgba(6,45,37,.98);border-bottom:1px solid var(--l)}.nav{height:68px;display:flex;align-items:center;gap:18px}.brand{color:#fff;font-size:11px;font-weight:900;letter-spacing:1px;line-height:1.2;min-width:max-content}.brand span{display:block;color:var(--g2);font-size:9px;letter-spacing:2px;margin-top:3px}.navscroll{display:flex;gap:20px;overflow-x:auto;white-space:nowrap;scrollbar-width:none;color:#fff;font-size:9px;font-weight:900;letter-spacing:1px;flex:1;justify-content:flex-end}.navscroll::-webkit-scrollbar{display:none}.navscroll a:hover{color:var(--g2)}.navjoin{background:var(--g);color:var(--v)!important;padding:10px 13px}
-.hero{position:relative;overflow:hidden;background:radial-gradient(circle at 80% 15%,rgba(208,166,79,.18),transparent 28%),linear-gradient(135deg,var(--v),var(--v2));color:#fff;min-height:calc(100svh - 68px);display:flex;align-items:center}.hero:after{content:"";position:absolute;inset:-20%;background:repeating-linear-gradient(133deg,transparent 0 95px,rgba(208,166,79,.08) 97px 100px,transparent 102px 150px);transform:rotate(-5deg);pointer-events:none}.hero .wrap{position:relative;z-index:1;padding:62px 0}.hero-mark{width:86px;height:100px;object-fit:contain;margin-bottom:22px}.season{font-size:10px;letter-spacing:3px;font-weight:900;color:var(--g2);margin-bottom:18px}h1,h2,h3{text-transform:uppercase}h1{font-size:clamp(48px,8.5vw,100px);line-height:.91;letter-spacing:-3px}h1 span,h2 span{color:var(--g2)}.lead{font-size:clamp(20px,3vw,28px);font-weight:900;margin-top:25px;max-width:760px}.sub{max-width:620px;color:var(--m);font-size:15px;margin-top:8px}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:14px 19px;font-size:10px;font-weight:900;letter-spacing:1.2px;text-align:center}.gold{background:var(--g);color:var(--v)}.outline{border:1px solid rgba(255,255,255,.5);color:#fff}
-section{padding:78px 0}.intro,.join-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:end}.section-head{max-width:760px}.section-head h2{font-size:clamp(39px,6vw,70px);line-height:.95;letter-spacing:-2px;margin-bottom:26px}.copy{font-size:17px}.copy p+p{margin-top:18px}.scale{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;border-top:1px solid #d7cebe;border-bottom:1px solid #d7cebe;padding:16px 0;margin-top:28px;font-size:12px;font-weight:900}.scale i{font-style:normal;color:var(--g)}.dark{background:var(--v);color:#fff}.center{max-width:850px;margin:auto;text-align:center}
-.athletes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.athlete{background:#faf7f0;border:1px solid #d8cfbf;overflow:hidden}.athlete img{width:100%;height:330px;object-fit:cover;object-position:center top;display:block}.athlete-body{padding:22px}.role{color:var(--g);font-size:9px;font-weight:900;letter-spacing:1.7px;text-transform:uppercase}.athlete h3{font-size:23px;margin:7px 0 10px}.athlete p{font-size:13px;color:#68736e}
-.races{display:grid;grid-template-columns:1fr 1fr;gap:14px}.race{border:1px solid var(--l);padding:25px}.race .date{color:var(--g2);font-size:10px;font-weight:900;letter-spacing:1.5px}.race h3{font-size:18px;color:#fff;margin:9px 0}.race p{font-size:13px;color:var(--m)}
-.trainbox,.module,.news article{background:#faf7f0;border:1px solid #d8cfbf;padding:25px}.trainbox{max-width:760px}.trainbox strong{font-size:22px}.modules,.news{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.module{min-height:150px}.module h3{font-size:18px;margin-bottom:10px}.module p,.news p{font-size:13px;color:#68736e}.news article{background:#fff}.date{color:var(--g);font-size:9px;font-weight:900;letter-spacing:2px}.news h3{font-size:18px;margin:16px 0 9px}
-.join{background:#eae3d7}.form{display:grid;gap:12px}.form label{font-size:9px;font-weight:900;letter-spacing:1px;text-transform:uppercase}.form input,.form select{width:100%;margin-top:6px;padding:13px;border:1px solid #cfc5b4;background:#fff}.form button{border:0;padding:15px;background:var(--g);color:var(--v);font-weight:900;letter-spacing:1px;cursor:pointer}.note{font-size:10px;color:#68736e}
-footer{background:#041a15;color:#fff;padding:32px 0}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:10px}.facebook{display:inline-block;margin-top:10px;color:var(--g2);font-weight:900;letter-spacing:1px}
-@media(max-width:850px){.intro,.join-grid{grid-template-columns:1fr;gap:35px}.athletes{grid-template-columns:1fr 1fr}.modules,.news{grid-template-columns:1fr 1fr}.navscroll{justify-content:flex-start;gap:17px}}
-@media(max-width:560px){.nav{height:60px;gap:10px}.brand{font-size:10px}.brand span{font-size:8px}.navscroll{font-size:8px;gap:16px}.navjoin{padding:8px 10px}.hero{min-height:calc(100svh - 60px)}.hero .wrap{padding:50px 0}.hero-mark{width:68px;height:80px}h1{font-size:51px;letter-spacing:-2px}.lead{font-size:20px}.sub{font-size:14px}.actions .btn{width:100%}section{padding:60px 0}.section-head h2{font-size:42px}.athletes,.modules,.news,.races{grid-template-columns:1fr}.athlete img{height:360px}.race{padding:22px}}
+
+:root{
+    --verde:#062d25;
+    --verde2:#0a3a2d;
+    --verde3:#031f19;
+    --dourado:#d2a542;
+    --dourado2:#edc45e;
+    --branco:#f5f2e9;
+    --cinza:#c8d0cb;
+    --linha:rgba(210,165,66,.35);
+}
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--verde);
+    color:var(--branco);
+    font-family:Arial,Helvetica,sans-serif;
+    line-height:1.55;
+    overflow-x:hidden;
+}
+
+body:before{
+    content:"";
+    position:fixed;
+    inset:0;
+    z-index:-5;
+    background:
+        radial-gradient(circle at 80% 15%,rgba(210,165,66,.10),transparent 28%),
+        radial-gradient(circle at 10% 85%,rgba(255,255,255,.025),transparent 30%),
+        linear-gradient(135deg,#031f19,#07372b 50%,#031f19);
+}
+
+body:after{
+    content:"";
+    position:fixed;
+    z-index:-4;
+    width:720px;
+    height:720px;
+    right:-180px;
+    top:100px;
+    opacity:.035;
+    background:url("images/logo-dourado.png") center/contain no-repeat;
+    pointer-events:none;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+.wrap{
+    width:min(1160px,90%);
+    margin:auto;
+}
+
+/* LINHAS DECORATIVAS */
+
+.lines{
+    position:fixed;
+    right:-20%;
+    bottom:5%;
+    width:90%;
+    height:45%;
+    z-index:-3;
+    pointer-events:none;
+    opacity:.35;
+    transform:rotate(-10deg);
+    background:
+        repeating-radial-gradient(
+            ellipse at 10% 100%,
+            transparent 0 28px,
+            rgba(210,165,66,.18) 29px 30px,
+            transparent 31px 48px
+        );
+}
+
+/* HEADER */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:rgba(3,31,25,.96);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--linha);
+}
+
+.nav{
+    min-height:68px;
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    min-width:max-content;
+}
+
+.brand img{
+    width:42px;
+    height:52px;
+    object-fit:contain;
+}
+
+.brand-text{
+    font-size:11px;
+    font-weight:900;
+    letter-spacing:1.5px;
+}
+
+.brand-text span{
+    display:block;
+    color:var(--dourado2);
+    font-size:9px;
+    letter-spacing:3px;
+    margin-top:3px;
+}
+
+.menu{
+    display:flex;
+    gap:17px;
+    overflow-x:auto;
+    scrollbar-width:none;
+    margin-left:auto;
+    white-space:nowrap;
+}
+
+.menu::-webkit-scrollbar{
+    display:none;
+}
+
+.menu a{
+    font-size:10px;
+    font-weight:900;
+    letter-spacing:1px;
+    color:#e8ebe8;
+}
+
+.menu a:hover{
+    color:var(--dourado2);
+}
+
+.menu .join{
+    background:var(--dourado);
+    color:var(--verde);
+    padding:9px 12px;
+}
+
+/* HERO */
+
+.hero{
+    min-height:calc(100svh - 68px);
+    display:flex;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+}
+
+.hero-inner{
+    padding:70px 0;
+    position:relative;
+    z-index:2;
+}
+
+.logo-big{
+    width:95px;
+    height:115px;
+    object-fit:contain;
+    margin-bottom:22px;
+}
+
+.eyebrow{
+    color:var(--dourado2);
+    font-size:11px;
+    font-weight:900;
+    letter-spacing:4px;
+    margin-bottom:18px;
+}
+
+.hero h1{
+    font-size:clamp(52px,9vw,105px);
+    line-height:.88;
+    letter-spacing:-3px;
+    text-transform:uppercase;
+}
+
+.hero h1 span{
+    display:block;
+    color:var(--dourado2);
+}
+
+.hero-lead{
+    font-size:clamp(20px,3vw,28px);
+    font-weight:900;
+    margin-top:28px;
+    max-width:760px;
+}
+
+.hero-sub{
+    color:var(--cinza);
+    font-size:16px;
+    max-width:620px;
+    margin-top:8px;
+}
+
+.buttons{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-top:28px;
+}
+
+.button{
+    display:inline-block;
+    padding:15px 20px;
+    font-size:10px;
+    font-weight:900;
+    letter-spacing:1.3px;
+}
+
+.gold{
+    background:var(--dourado);
+    color:var(--verde);
+}
+
+.outline{
+    border:1px solid rgba(255,255,255,.45);
+}
+
+/* SECÇÕES */
+
+section{
+    padding:85px 0;
+}
+
+.dark{
+    background:rgba(3,31,25,.35);
+}
+
+.ey{
+    color:var(--dourado2);
+    font-size:10px;
+    font-weight:900;
+    letter-spacing:3px;
+    margin-bottom:15px;
+}
+
+.title{
+    font-size:clamp(40px,6vw,70px);
+    line-height:.95;
+    letter-spacing:-2px;
+    text-transform:uppercase;
+    margin-bottom:28px;
+}
+
+.title span{
+    color:var(--dourado2);
+}
+
+.lead{
+    font-size:19px;
+    color:#dce2de;
+    max-width:800px;
+}
+
+.gold-line{
+    width:100%;
+    height:1px;
+    background:linear-gradient(
+        90deg,
+        var(--dourado),
+        transparent
+    );
+    margin:32px 0;
+}
+
+/* INSCRIÇÃO */
+
+.registration{
+    border-top:1px solid var(--linha);
+    border-bottom:1px solid var(--linha);
+}
+
+.registration-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+.registration-text p{
+    color:var(--cinza);
+    font-size:17px;
+    max-width:600px;
+}
+
+.registration-text strong{
+    color:var(--branco);
+}
+
+.form-box{
+    background:rgba(3,25,19,.78);
+    border:1px solid var(--linha);
+    padding:28px;
+}
+
+.form{
+    display:grid;
+    gap:13px;
+}
+
+.form label{
+    color:var(--dourado2);
+    font-size:9px;
+    font-weight:900;
+    letter-spacing:1px;
+}
+
+.form input,
+.form select{
+    width:100%;
+    margin-top:6px;
+    padding:14px;
+    border:1px solid rgba(210,165,66,.35);
+    background:#092d24;
+    color:white;
+    border-radius:2px;
+    outline:none;
+}
+
+.form input:focus,
+.form select:focus{
+    border-color:var(--dourado2);
+}
+
+.form select option{
+    color:#111;
+}
+
+.form button{
+    border:0;
+    background:var(--dourado);
+    color:var(--verde);
+    padding:16px;
+    font-weight:900;
+    letter-spacing:1px;
+    cursor:pointer;
+}
+
+.form-note{
+    font-size:10px;
+    color:#9eaaa5;
+}
+
+/* PROJETO */
+
+.project-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+.project-copy p{
+    color:var(--cinza);
+    font-size:17px;
+}
+
+.project-copy p+p{
+    margin-top:18px;
+}
+
+.scale{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:10px;
+    border-top:1px solid var(--linha);
+    border-bottom:1px solid var(--linha);
+    padding:18px 0;
+    margin-top:30px;
+    font-size:12px;
+    font-weight:900;
+}
+
+.scale i{
+    color:var(--dourado2);
+    font-style:normal;
+}
+
+/* EQUIPA */
+
+.athletes{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.athlete{
+    background:rgba(3,27,21,.85);
+    border:1px solid var(--linha);
+    overflow:hidden;
+}
+
+.athlete img{
+    width:100%;
+    height:390px;
+    object-fit:cover;
+    object-position:center top;
+    display:block;
+}
+
+.athlete-body{
+    padding:22px;
+}
+
+.role{
+    color:var(--dourado2);
+    font-size:9px;
+    font-weight:900;
+    letter-spacing:1.5px;
+}
+
+.athlete h3{
+    font-size:24px;
+    margin:7px 0;
+}
+
+.athlete p{
+    color:var(--cinza);
+    font-size:13px;
+}
+
+/* PROVAS */
+
+.races{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+.race{
+    border:1px solid var(--linha);
+    padding:25px;
+    background:rgba(3,27,21,.55);
+}
+
+.race .date{
+    color:var(--dourado2);
+    font-size:10px;
+    font-weight:900;
+    letter-spacing:1.5px;
+}
+
+.race h3{
+    font-size:19px;
+    text-transform:uppercase;
+    margin:9px 0;
+}
+
+.race p{
+    color:var(--cinza);
+    font-size:13px;
+}
+
+/* TREINOS / NOTÍCIAS */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+}
+
+.card{
+    border:1px solid var(--linha);
+    padding:27px;
+    background:rgba(3,27,21,.6);
+    min-height:160px;
+}
+
+.card h3{
+    color:var(--dourado2);
+    font-size:19px;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:var(--cinza);
+    font-size:14px;
+}
+
+/* CONTACTOS */
+
+.contact{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+}
+
+.contact p{
+    color:var(--cinza);
+    font-size:18px;
+    margin-bottom:25px;
+}
+
+.contact-buttons{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+/* FOOTER */
+
+footer{
+    border-top:1px solid var(--linha);
+    background:#031b16;
+    padding:35px 0;
+}
+
+.footer-inner{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    flex-wrap:wrap;
+    color:#aeb9b4;
+    font-size:11px;
+}
+
+.footer-inner strong{
+    color:white;
+}
+
+.footer-inner a{
+    color:var(--dourado2);
+}
+
+/* PWA */
+
+.install{
+    position:fixed;
+    right:16px;
+    bottom:16px;
+    z-index:150;
+    border:0;
+    background:var(--dourado);
+    color:var(--verde);
+    padding:13px 17px;
+    border-radius:999px;
+    font-size:11px;
+    font-weight:900;
+    box-shadow:0 8px 30px rgba(0,0,0,.4);
+}
+
+/* MOBILE */
+
+@media(max-width:850px){
+
+    .nav{
+        min-height:60px;
+        gap:10px;
+    }
+
+    .brand img{
+        width:36px;
+        height:45px;
+    }
+
+    .brand-text{
+        font-size:9px;
+    }
+
+    .brand-text span{
+        font-size:7px;
+    }
+
+    .menu{
+        gap:15px;
+    }
+
+    .menu a{
+        font-size:8px;
+    }
+
+    .hero{
+        min-height:calc(100svh - 60px);
+    }
+
+    .hero-inner{
+        padding:55px 0;
+    }
+
+    .logo-big{
+        width:75px;
+        height:90px;
+    }
+
+    .hero h1{
+        font-size:53px;
+    }
+
+    .hero-lead{
+        font-size:20px;
+    }
+
+    .hero-sub{
+        font-size:14px;
+    }
+
+    section{
+        padding:65px 0;
+    }
+
+    .registration-grid,
+    .project-grid{
+        grid-template-columns:1fr;
+        gap:35px;
+    }
+
+    .athletes{
+        grid-template-columns:1fr;
+    }
+
+    .races{
+        grid-template-columns:1fr;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .athlete img{
+        height:430px;
+    }
+
+    .buttons .button{
+        width:100%;
+        text-align:center;
+    }
+
+}
+
 </style>
 </head>
+
 <body>
-<header><nav class="nav wrap">
-<a class="brand" href="#top">NÚCLEO SCP DE PENICHE<span>ATLETISMO</span></a>
-<div class="navscroll">
-<a href="#projeto">PROJETO</a><a href="#atletas">EQUIPA</a><a href="#provas">PROVAS</a><a href="#treinos">TREINOS</a><a href="#noticias">NOTÍCIAS</a><a href="#eventos">EVENTOS</a><a href="#contactos">CONTACTOS</a><a class="navjoin" href="#inscricao">JUNTA-TE</a>
-</div></nav></header>
 
-<section class="hero" id="top"><div class="wrap">
-<img class="hero-mark" src="images/logo-dourado.png.png" alt="Núcleo Sporting Clube de Portugal de Peniche">
-<div class="season">ÉPOCA 2026 / 2027</div>
-<h1>TODOS JUNTOS<br><span>SOMOS ENORMES.</span></h1>
-<p class="lead">Uma comunidade de atletismo aberta a todos.</p>
-<p class="sub">Do primeiro quilómetro aos 42 km. Não importa onde começas. Importa onde podemos chegar juntos.</p>
-<div class="actions"><a class="btn gold" href="#inscricao">QUERO FAZER PARTE</a><a class="btn outline" href="#projeto">CONHECER O PROJETO</a></div>
-</div></section>
+<div class="lines"></div>
 
-<section id="projeto"><div class="wrap intro">
-<div class="section-head"><div class="ey">O PROJETO</div><h2>Mais do que uma equipa.<br><span>Uma comunidade.</span></h2></div>
-<div class="copy"><p>O Atletismo do Núcleo SCP de Peniche nasce para criar um espaço onde qualquer pessoa possa correr, evoluir e sentir que pertence a uma comunidade.</p><p>Queremos acolher quem está a dar os primeiros passos, quem procura evoluir e quem já vive a corrida há anos.</p><div class="scale"><span>1 KM</span><i>→</i><span>5 KM</span><i>→</i><span>10 KM</span><i>→</i><span>21 KM</span><i>→</i><span>42 KM</span></div></div>
-</div></section>
+<header>
 
-<section class="dark"><div class="wrap center"><div class="ey">FAZ PARTE</div><h2 style="font-size:clamp(42px,6vw,72px);line-height:.95;letter-spacing:-2px">O teu lugar<br><span>pode ser aqui.</span></h2><p style="color:var(--m);font-size:18px;margin:24px auto;max-width:700px">Não importa se corres 1 km ou 42 km. Não importa se estás a começar ou se já corres há anos. Aqui há lugar para todos.</p><a class="btn gold" href="#inscricao">QUERO FAZER PARTE</a></div></section>
+<nav class="nav wrap">
 
-<section id="provas" class="dark"><div class="wrap"><div class="ey">ONDE ESTAREMOS PRESENTES</div><div class="section-head"><h2>Provas<br><span>agendadas.</span></h2></div><div class="races">
-<article class="race"><div class="date">11 OUTUBRO 2026</div><h3>Meia Maratona Ponte Vasco da Gama</h3><p>Lisboa · 21,1 km</p></article>
-<article class="race"><div class="date">29 NOVEMBRO 2026</div><h3>Meia Maratona de Sevilha 🇪🇸</h3><p>Sevilha · 21,1 km</p></article>
-<article class="race"><div class="date">06 DEZEMBRO 2026</div><h3>Grande Prémio de Natal</h3><p>Lisboa · prova de estrada</p></article>
-<article class="race"><div class="date">2027 · DATA A ANUNCIAR</div><h3>Grande Prémio Peniche a Correr</h3><p>Peniche · prova de referência do Núcleo</p></article>
-<article class="race"><div class="date">26 JUNHO 2027</div><h3>Corrida das Fogueiras</h3><p>Peniche · 15 km</p></article>
-</div></div></section>
+<a class="brand" href="#inicio">
 
-<section id="atletas"><div class="wrap"><div class="ey">EQUIPA & DIREÇÃO</div><div class="section-head"><h2>Quem dá vida<br><span>ao projeto.</span></h2></div><div class="athletes">
-<article class="athlete"><img src="images/nelson.png.png" alt="Nelson Sousa"><div class="athlete-body"><div class="role">PRESIDENTE</div><h3>Nelson Sousa</h3><p>Presidente e responsável pela direção do projeto de Atletismo do Núcleo SCP de Peniche.</p></div></article>
-<article class="athlete"><img src="images/diogo.png.png" alt="Diogo Maltez"><div class="athlete-body"><div class="role">ATLETA · DEPARTAMENTO DE ATLETISMO</div><h3>Diogo Maltez</h3><p>Atleta e responsável pelo desenvolvimento desportivo do projeto.</p></div></article>
-<article class="athlete"><img src="images/armando.png.png" alt="Armando Coelho"><div class="athlete-body"><div class="role">ATLETA · DEPARTAMENTO DE ATLETISMO</div><h3>Armando Coelho</h3><p>Atleta e responsável pelo desenvolvimento e organização do projeto.</p></div></article>
-</div></div></section>
+<img src="images/logo-dourado.png" alt="Núcleo SCP de Peniche">
 
-<section id="treinos"><div class="wrap"><div class="ey">TREINOS</div><div class="section-head"><h2>A partir de<br><span>setembro.</span></h2></div><div class="trainbox"><strong>Treinos aos domingos</strong><p style="margin-top:12px;color:#68736e">Horário e local a determinar. O objetivo é criar um ponto de encontro regular para a comunidade, respeitando os diferentes níveis e objetivos de cada atleta.</p></div></div></section>
+<div class="brand-text">
+NÚCLEO SCP DE PENICHE
+<span>ATLETISMO</span>
+</div>
 
-<section id="noticias"><div class="wrap"><div class="ey">NOTÍCIAS</div><div class="section-head"><h2>O que está<br><span>a acontecer.</span></h2></div><div class="news">
-<article><div class="date">EM BREVE</div><h3>Apresentação do projeto</h3><p>Conhece o novo projeto de Atletismo do Núcleo SCP de Peniche.</p></article>
-<article><div class="date">ÉPOCA 2026 / 2027</div><h3>Nova equipa</h3><p>Conhece os atletas que vão representar o Núcleo ao longo da época.</p></article>
-<article><div class="date">EM BREVE</div><h3>Novo equipamento</h3><p>A identidade oficial do Atletismo do Núcleo SCP de Peniche.</p></article>
-</div></div></section>
+</a>
 
-<section id="eventos" class="dark"><div class="wrap center"><div class="ey">EVENTOS & COMUNIDADE</div><h2 style="font-size:clamp(42px,6vw,72px);line-height:.95;letter-spacing:-2px">Mais do que<br><span>correr.</span></h2><p style="color:var(--m);font-size:19px;margin-top:24px">Queremos criar iniciativas que aproximem o Núcleo da comunidade, incluindo ações de carácter social e solidário.</p><p style="margin-top:22px;font-size:19px"><strong>Corremos juntos. Ajudamos juntos. Crescemos juntos.</strong></p></div></section>
+<div class="menu">
 
-<section id="inscricao" style="background:#eae3d7"><div class="wrap join-grid"><div><div class="ey">INSCRIÇÃO / INTERESSE</div><div class="section-head"><h2>Queres fazer<br><span>parte?</span></h2></div><p class="copy">Não precisas de ser atleta. Não precisas de correr 10 km. Não precisas de ter experiência.<br><br><strong>Só precisas de querer começar.</strong></p></div>
-<form class="form" onsubmit="event.preventDefault();alert('Obrigado pelo teu interesse! Entraremos em contacto contigo.');">
-<label>Nome<input required type="text" placeholder="O teu nome"></label>
-<label>Email<input required type="email" placeholder="O teu email"></label>
-<label>Experiência<select><option>Estou a começar</option><option>Até 5 km</option><option>5–10 km</option><option>10–21 km</option><option>Mais de 21 km</option></select></label>
-<label>Objetivo<select><option>Começar a correr</option><option>Evoluir</option><option>Participar em provas</option><option>Fazer parte da comunidade</option></select></label>
-<button type="submit">QUERO FAZER PARTE</button><div class="note">O formulário será ligado ao sistema de contactos do projeto numa próxima fase.</div>
-</form></div></section>
+<a href="#projeto">PROJETO</a>
+<a href="#atletas">EQUIPA</a>
+<a href="#provas">PROVAS</a>
+<a href="#treinos">TREINOS</a>
+<a href="#noticias">NOTÍCIAS</a>
+<a href="#contactos">CONTACTOS</a>
+<a class="join" href="#inscricao">JUNTA-TE</a>
 
-<section id="contactos" class="dark"><div class="wrap center"><div class="ey">CONTACTOS</div><h2 style="font-size:clamp(42px,6vw,72px);line-height:.95;letter-spacing:-2px">Fala <span>connosco.</span></h2><p style="color:var(--m);font-size:18px;margin:24px auto 10px">Queres saber mais sobre o projeto, os treinos ou fazer parte da equipa?</p><a href="tel:+351919273729" class="btn gold" style="margin-top:18px">919 273 729</a><br><a href="https://www.facebook.com/people/N%C3%BAcleo-Sporting-Clube-de-Portugal-de-Peniche/61569508690456/?sk=reels_tab" target="_blank" rel="noopener" class="btn outline" style="margin-top:10px">FACEBOOK DO NÚCLEO</a></div></section>
+</div>
 
-<footer><div class="wrap foot"><div><strong>NÚCLEO SCP DE PENICHE — ATLETISMO</strong><br>ÉPOCA 2026 / 2027<br><a class="facebook" href="https://www.facebook.com/people/N%C3%BAcleo-Sporting-Clube-de-Portugal-de-Peniche/61569508690456/?sk=reels_tab" target="_blank" rel="noopener">FACEBOOK ↗</a></div><div>919 273 729<br><span style="color:var(--g2)">TODOS JUNTOS SOMOS ENORMES.</span></div></div></footer>
+</nav>
+
+</header>
+
+
+<!-- PRIMEIRO ECRÃ -->
+
+<section class="hero" id="inicio">
+
+<div class="wrap hero-inner">
+
+<img class="logo-big"
+src="images/logo-dourado.png"
+alt="Núcleo SCP de Peniche">
+
+<div class="eyebrow">
+ÉPOCA 2026 / 2027
+</div>
+
+<h1>
+TODOS JUNTOS
+<span>SOMOS ENORMES.</span>
+</h1>
+
+<p class="hero-lead">
+Uma comunidade de atletismo aberta a todos.
+</p>
+
+<p class="hero-sub">
+Do primeiro quilómetro aos 42 km.
+Não importa onde começas.
+Importa onde podemos chegar juntos.
+</p>
+
+<div class="buttons">
+
+<a class="button gold" href="#inscricao">
+QUERO FAZER PARTE
+</a>
+
+<a class="button outline" href="#projeto">
+CONHECER O PROJETO
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- INSCRIÇÃO -->
+
+<section class="registration" id="inscricao">
+
+<div class="wrap registration-grid">
+
+<div class="registration-text">
+
+<div class="ey">
+INSCRIÇÃO / INTERESSE
+</div>
+
+<h2 class="title">
+QUERES FAZER<br>
+<span>PARTE?</span>
+</h2>
+
+<p>
+Não precisas de ser atleta.
+Não precisas de correr 10 km.
+Não precisas de ter experiência.
+</p>
+
+<br>
+
+<p>
+<strong>Só precisas de querer começar.</strong>
+</p>
+
+<br>
+
+<p>
+Preenche os teus dados e fala diretamente connosco.
+O objetivo é simples: conhecer-te e perceber como podemos fazer parte do mesmo caminho.
+</p>
+
+</div>
+
+
+<div class="form-box">
+
+<form class="form" id="interestForm">
+
+<label>
+NOME
+<input name="nome" type="text" placeholder="O teu nome" required>
+</label>
+
+<label>
+TELEMÓVEL
+<input name="telefone" type="tel" placeholder="O teu contacto" required>
+</label>
+
+<label>
+EMAIL
+<input name="email" type="email" placeholder="Opcional">
+</label>
+
+<label>
+ONDE ESTÁS AGORA?
+<select name="experiencia">
+
+<option>Estou a começar</option>
+<option>Até 5 km</option>
+<option>5–10 km</option>
+<option>10–21 km</option>
+<option>Mais de 21 km</option>
+
+</select>
+</label>
+
+<label>
+O QUE PROCURAS?
+<select name="objetivo">
+
+<option>Começar a correr</option>
+<option>Evoluir</option>
+<option>Participar em provas</option>
+<option>Fazer parte da comunidade</option>
+
+</select>
+</label>
+
+<button type="submit">
+QUERO FAZER PARTE →
+</button>
+
+<div class="form-note">
+Ao enviar, será aberta uma conversa de WhatsApp com a equipa responsável.
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PROJETO -->
+
+<section id="projeto">
+
+<div class="wrap project-grid">
+
+<div>
+
+<div class="ey">
+O PROJETO
+</div>
+
+<h2 class="title">
+MAIS DO QUE<br>
+UMA EQUIPA.<br>
+<span>UMA COMUNIDADE.</span>
+</h2>
+
+</div>
+
+
+<div class="project-copy">
+
+<p>
+O Atletismo do Núcleo SCP de Peniche nasce para criar um espaço onde qualquer pessoa possa correr, evoluir e sentir que pertence a uma comunidade.
+</p>
+
+<p>
+Queremos acolher quem está a dar os primeiros passos, quem procura evoluir e quem já vive a corrida há anos.
+</p>
+
+<div class="scale">
+
+<span>1 KM</span>
+<i>→</i>
+<span>5 KM</span>
+<i>→</i>
+<span>10 KM</span>
+<i>→</i>
+<span>21 KM</span>
+<i>→</i>
+<span>42 KM</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- EQUIPA -->
+
+<section class="dark" id="atletas">
+
+<div class="wrap">
+
+<div class="ey">
+EQUIPA & DIREÇÃO
+</div>
+
+<h2 class="title">
+QUEM DÁ VIDA<br>
+<span>AO PROJETO.</span>
+</h2>
+
+
+<div class="athletes">
+
+
+<article class="athlete">
+
+<img src="images/nelson.png"
+alt="Nelson Sousa">
+
+<div class="athlete-body">
+
+<div class="role">
+PRESIDENTE
+</div>
+
+<h3>
+Nelson Sousa
+</h3>
+
+<p>
+Presidente e responsável pela direção do Núcleo SCP de Peniche.
+</p>
+
+</div>
+
+</article>
+
+
+<article class="athlete">
+
+<img src="images/diogo.png"
+alt="Diogo Maltez">
+
+<div class="athlete-body">
+
+<div class="role">
+DEPARTAMENTO DE ATLETISMO
+</div>
+
+<h3>
+Diogo Maltez
+</h3>
+
+<p>
+Atleta e responsável pelo desenvolvimento desportivo do projeto.
+</p>
+
+</div>
+
+</article>
+
+
+<article class="athlete">
+
+<img src="images/armando.png"
+alt="Armando Coelho">
+
+<div class="athlete-body">
+
+<div class="role">
+DEPARTAMENTO DE ATLETISMO
+</div>
+
+<h3>
+Armando Coelho
+</h3>
+
+<p>
+Atleta e responsável pelo desenvolvimento e organização do projeto.
+</p>
+
+</div>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PROVAS -->
+
+<section id="provas">
+
+<div class="wrap">
+
+<div class="ey">
+ONDE ESTAREMOS PRESENTES
+</div>
+
+<h2 class="title">
+PRÓXIMAS<br>
+<span>PROVAS.</span>
+</h2>
+
+
+<div class="races">
+
+
+<article class="race">
+
+<div class="date">
+11 OUTUBRO 2026
+</div>
+
+<h3>
+Meia Maratona Ponte Vasco da Gama
+</h3>
+
+<p>
+Lisboa · 21,1 km
+</p>
+
+</article>
+
+
+<article class="race">
+
+<div class="date">
+29 NOVEMBRO 2026
+</div>
+
+<h3>
+Meia Maratona de Sevilha
+</h3>
+
+<p>
+Sevilha · Espanha · 21,1 km
+</p>
+
+</article>
+
+
+<article class="race">
+
+<div class="date">
+06 DEZEMBRO 2026
+</div>
+
+<h3>
+Grande Prémio de Natal
+</h3>
+
+<p>
+Lisboa · prova de estrada
+</p>
+
+</article>
+
+
+<article class="race">
+
+<div class="date">
+2027 · DATA A ANUNCIAR
+</div>
+
+<h3>
+Grande Prémio Peniche a Correr
+</h3>
+
+<p>
+Peniche · prova de referência do Núcleo
+</p>
+
+</article>
+
+
+<article class="race">
+
+<div class="date">
+26 JUNHO 2027
+</div>
+
+<h3>
+Corrida das Fogueiras
+</h3>
+
+<p>
+Peniche · 15 km
+</p>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- TREINOS -->
+
+<section class="dark" id="treinos">
+
+<div class="wrap">
+
+<div class="ey">
+TREINOS
+</div>
+
+<h2 class="title">
+A PARTIR DE<br>
+<span>SETEMBRO.</span>
+</h2>
+
+
+<div class="cards">
+
+<div class="card">
+
+<h3>
+DOMINGOS
+</h3>
+
+<p>
+Os treinos terão lugar aos domingos.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+HORÁRIO
+</h3>
+
+<p>
+A determinar de acordo com a dinâmica do grupo.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+LOCAL
+</h3>
+
+<p>
+A determinar e comunicar aos atletas.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- NOTÍCIAS -->
+
+<section id="noticias">
+
+<div class="wrap">
+
+<div class="ey">
+NOVIDADES
+</div>
+
+<h2 class="title">
+NOTÍCIAS.
+</h2>
+
+
+<div class="cards">
+
+<div class="card">
+
+<h3>
+APRESENTAÇÃO
+</h3>
+
+<p>
+Novidades sobre o projeto e a época 2026 / 2027.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+PROVAS
+</h3>
+
+<p>
+Informações, resultados e participação dos atletas.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+COMUNIDADE
+</h3>
+
+<p>
+Iniciativas, ações solidárias e atividades do Núcleo.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACTOS -->
+
+<section class="dark" id="contactos">
+
+<div class="wrap contact">
+
+<div class="ey">
+CONTACTOS
+</div>
+
+<h2 class="title">
+FALE<br>
+<span>CONNOSCO.</span>
+</h2>
+
+<p>
+Queres saber mais sobre o projeto, os treinos ou fazer parte da equipa?
+</p>
+
+<div class="contact-buttons">
+
+<a class="button gold"
+href="tel:+351919273729">
+919 273 729
+</a>
+
+<a class="button outline"
+href="https://wa.me/351962634653"
+target="_blank">
+WHATSAPP
+</a>
+
+<a class="button outline"
+href="https://www.facebook.com/people/N%C3%BAcleo-Sporting-Clube-de-Portugal-de-Peniche/61569508690456/?sk=reels_tab"
+target="_blank">
+FACEBOOK DO NÚCLEO
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<div class="wrap footer-inner">
+
+<div>
+
+<strong>
+NÚCLEO SCP DE PENICHE — ATLETISMO
+</strong>
+
+<br>
+
+ÉPOCA 2026 / 2027
+
+<br><br>
+
+<a href="https://www.facebook.com/people/N%C3%BAcleo-Sporting-Clube-de-Portugal-de-Peniche/61569508690456/?sk=reels_tab"
+target="_blank">
+FACEBOOK ↗
+</a>
+
+</div>
+
+
+<div>
+
+919 273 729
+
+<br>
+
+<span style="color:#edc45e">
+TODOS JUNTOS SOMOS ENORMES.
+</span>
+
+</div>
+
+</div>
+
+</footer>
+
+
+<button class="install" id="installButton">
+INSTALAR NO TELEMÓVEL
+</button>
+
+
+<script>
+
+/* ================================
+   INSCRIÇÃO → WHATSAPP
+   DESTINO: 962 634 653
+================================ */
+
+document
+.getElementById("interestForm")
+.addEventListener("submit",function(event){
+
+event.preventDefault();
+
+const formData=new FormData(this);
+
+const nome=formData.get("nome");
+const telefone=formData.get("telefone");
+const email=formData.get("email") || "Não indicado";
+const experiencia=formData.get("experiencia");
+const objetivo=formData.get("objetivo");
+
+const mensagem=
+"Olá! Tenho interesse em fazer parte do Atletismo do Núcleo SCP de Peniche.%0A%0A"+
+"Nome: "+encodeURIComponent(nome)+"%0A"+
+"Telemóvel: "+encodeURIComponent(telefone)+"%0A"+
+"Email: "+encodeURIComponent(email)+"%0A"+
+"Experiência: "+encodeURIComponent(experiencia)+"%0A"+
+"Objetivo: "+encodeURIComponent(objetivo);
+
+window.open(
+"https://wa.me/351962634653?text="+mensagem,
+"_blank"
+);
+
+});
+
+
+/* ================================
+   INSTALAÇÃO PWA
+================================ */
+
+let deferredPrompt=null;
+
+const installButton=
+document.getElementById("installButton");
+
+window.addEventListener(
+"beforeinstallprompt",
+function(event){
+
+event.preventDefault();
+
+deferredPrompt=event;
+
+}
+);
+
+installButton.addEventListener(
+"click",
+async function(){
+
+if(deferredPrompt){
+
+deferredPrompt.prompt();
+
+await deferredPrompt.userChoice;
+
+deferredPrompt=null;
+
+}else{
+
+alert(
+"No iPhone/iPad: carregue em Partilhar e depois em 'Adicionar ao ecrã principal'.\n\n"+
+"No Android: abra o menu do navegador e escolha 'Instalar aplicação' ou 'Adicionar ao ecrã principal'."
+);
+
+}
+
+});
+
+
+/* ================================
+   SERVICE WORKER
+================================ */
+
+if("serviceWorker" in navigator){
+
+window.addEventListener(
+"load",
+function(){
+
+navigator.serviceWorker
+.register("./sw.js")
+.catch(function(){});
+
+});
+
+}
+
+</script>
+
 </body>
 </html>
+3. Há ainda duas pequenas coisas para a instalação
+
+Depois do index.html, cria no GitHub um ficheiro chamado:
+
+manifest.webmanifest
+
+e cola:
+
+{
+  "name": "Atletismo Núcleo SCP de Peniche",
+  "short_name": "Atletismo SCP",
+  "description": "Atletismo do Núcleo SCP de Peniche — Época 2026/2027.",
+  "lang": "pt-PT",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#062d25",
+  "theme_color": "#062d25",
+  "icons": [
+    {
+      "src": "images/logo-dourado.png",
+      "sizes": "532x754",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
+
+E cria outro:
+
+sw.js
+const CACHE = "atletismo-scp-peniche-v1";
+
+const FILES = [
+  "./",
+  "./index.html",
+  "./manifest.webmanifest",
+  "./images/logo-dourado.png",
+  "./images/nelson.png",
+  "./images/diogo.png",
+  "./images/armando.png"
+];
+
+self.addEventListener("install", event => {
+
+  event.waitUntil(
+
+    caches
+      .open(CACHE)
+      .then(cache => cache.addAll(FILES))
+      .then(() => self.skipWaiting())
+
+  );
+
+});
+
+self.addEventListener("activate", event => {
+
+  event.waitUntil(
+    caches
+      .keys()
+      .then(keys =>
+        Promise.all(
+          keys
+            .filter(key => key !== CACHE)
+            .map(key => caches.delete(key))
+        )
+      )
+      .then(() => self.clients.claim())
+  );
+
+});
+
+self.addEventListener("fetch", event => {
+
+  if(event.request.method !== "GET") return;
+
+  event.respondWith(
+
+    caches.match(event.request)
+      .then(cached => cached || fetch(event.request))
+
+  );
+
+});
+4. A estrutura final no GitHub
+
+Deverá ficar assim:
+
+-atletismo-nucleo-peniche
+│
+├── index.html
+├── manifest.webmanifest
+├── sw.js
+│
+└── images
+    ├── logo-dourado.png
+    ├── nelson.png
+    ├── diogo.png
+    └── armando.png
+
+Aqui está a parte importante: como disseste que já alteraste os nomes dos ficheiros, o código acima já está preparado para esses nomes.
+
+E o resultado que estamos a procurar
+
+QR CODE
+
+↓
+
+QUERES FAZER PARTE?
+
+↓
+
+Nome / Telemóvel / Email / Experiência / Objetivo
+
+↓
+
+QUERO FAZER PARTE →
+
+↓
+
+WhatsApp 962 634 653
+
+Depois a pessoa pode conhecer:
+
+Projeto → Equipa → Provas → Treinos → Notícias → Contactos
+
+E o fundo mantém sempre a linguagem visual dos slides: verde profundo + dourado + linhas curvas + marca de água muito discreta, em vez daquela alternância bege/verde que estava a deixar a plataforma sem identidade.
+
+E sim: com o manifest + service worker, estamos a preparar isto como PWA instalável, não apenas como uma página web.
+
+Uma última coisa: eu manteria o 919 273 729 como contacto público e o 962 634 653 exclusivamente para os contactos de inscrição/WhatsApp, exatamente como definimos. 
+
+logo_nucleo_peniche_dourado_transparente_FINAL2.png
+Imagem
