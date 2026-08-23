@@ -1,0 +1,20 @@
+{
+  "name": "Atletismo Núcleo SCP de Peniche",
+  "short_name": "Atletismo SCP",
+  "description": "Atletismo do Núcleo SCP de Peniche — Época 2026/2027.",
+  "lang": "pt-PT",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#062d25",
+  "theme_color": "#062d25",
+  "icons": [
+    {
+      "src": "images/logo-dourado.png",
+      "sizes": "532x754",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
