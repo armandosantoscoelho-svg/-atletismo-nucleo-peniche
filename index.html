@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Atletismo — Núcleo SCP de Peniche</title>
+
+  <meta name="description"
+        content="Atletismo do Núcleo SCP de Peniche. Todos juntos somos enormes. Uma comunidade aberta a todos, do primeiro quilómetro aos 42 km.">
+
+  <style>
+    :root {
+      --verde: #092b24;
+      --verde-claro: #123c32;
+      --dourado: #c9a45b;
+      --branco: #ffffff;
+      --fundo: #f5f1e8;
+      --texto: #17231f;
+      --cinza: #68736e;
+      --linha: #d8cfbf;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--fundo);
+      color: var(--texto);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* HEADER */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(9, 43, 36, 0.98);
+      border-bottom: 1px solid rgba(201, 164, 91, 0.45);
+    }
+
+    .nav {
+      max-width: 1200px;
+      margin: auto;
+      min-height: 76px;
+      padding: 12px 30px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .brand {
+      color: white;
+      font-weight: 800;
+      font-size: 12px;
+      letter-spacing: 1px;
+      line-height: 1.2;
+    }
+
+    .brand span {
+      color: var(--dourado);
+      font-size: 10px;
+      letter-spacing: 2px;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      color: white;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .menu a:hover {
+      color: var(--dourado);
+    }
+
+    .join-button {
+      background: var(--dourado);
+      color: var(--verde);
+      padding: 11px 17px;
+      font-weight: 800;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 78vh;
+      background:
+        linear-gradient(
+          110deg,
+          var(--verde),
+          var(--verde-claro)
+        );
+
+      color: white;
+
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-content {
+      max-width: 1200px;
+      width: 90%;
+      margin: auto;
+      padding: 100px 0;
+    }
+
+    .eyebrow {
+      color: var(--dourado);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 3px;
+      margin-bottom: 18px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      line-height: 1.05;
+    }
+
+    h1 {
+      font-size: clamp(48px, 8vw, 96px);
+      font-weight: 800;
+      letter-spacing: -2px;
+    }
+
+    h1 span,
+    h2 span {
+      color: var(--dourado);
+    }
+
+    .hero-subtitle {
+      margin-top: 30px;
+      font-size: clamp(20px, 3vw, 30px);
+      font-weight: 700;
+    }
+
+    .hero-text {
+      max-width: 650px;
+      margin-top: 10px;
+      color: #dce4df;
+      font-size: 16px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 32px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 21px;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    .button-gold {
+      background: var(--dourado);
+      color: var(--verde);
+    }
+
+    .button-outline {
+      border: 1px solid rgba(255,255,255,.6);
+      color: white;
+    }
+
+    /* SECTIONS */
+
+    section {
+      padding: 90px 6%;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: clamp(38px, 5vw, 62px);
+      margin-bottom: 35px;
+    }
+
+    .two-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+    }
+
+    .large-text {
+      font-size: 19px;
+    }
+
+    .distance {
+      margin-top: 35px;
+      padding: 20px 0;
+
+      border-top: 1px solid var(--linha);
+      border-bottom: 1px solid var(--linha);
+
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    .distance span {
+      color: var(--dourado);
+      padding: 0 7px;
+    }
+
+    /* DARK SECTION */
+
+    .dark {
+      background: var(--verde);
+      color: white;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: rgba(201,164,91,.4);
+    }
+
+    .card {
+      background: var(--verde);
+      padding: 30px;
+      min-height: 190px;
+    }
+
+    .card h3 {
+      color: var(--dourado);
+      font-size: 17px;
+      margin-bottom: 18px;
+    }
+
+    .card p {
+      color: #d5dfda;
+      font-size: 14px;
+    }
+
+    /* FEATURES */
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      border-top: 1px solid var(--linha);
+    }
+
+    .feature {
+      padding: 35px 25px;
+      border-right: 1px solid var(--linha);
+      border-bottom: 1px solid var(--linha);
+    }
+
+    .feature:nth-child(3n) {
+      border-right: 0;
+    }
+
+    .feature-number {
+      color: var(--dourado);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .feature h3 {
+      margin-top: 30px;
+      margin-bottom: 12px;
+      font-size: 19px;
+    }
+
+    /* PROVAS */
+
+    .race-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+    }
+
+    .race-box h3 {
+      color: var(--dourado);
+      margin-bottom: 18px;
+      font-size: 18px;
+    }
+
+    .race-box p {
+      color: #d8e0dc;
+    }
+
+    /* NOTÍCIAS */
+
+    .news {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .news-card {
+      background: white;
+      border: 1px solid var(--linha);
+      padding: 28px;
+    }
+
+    .news-date {
+      color: var(--dourado);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    .news-card h3 {
+      margin: 20px 0 12px;
+      font-size: 20px;
+    }
+
+    .news-card p {
+      color: var(--cinza);
+      font-size: 14px;
+    }
+
+    /* COMMUNITY */
+
+    .community {
+      text-align: center;
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .community p {
+      font-size: 19px;
+      margin-bottom: 20px;
+    }
+
+    /* JOIN */
+
+    .join-section {
+      background: #ebe5d9;
+    }
+
+    .join-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+    }
+
+    form {
+      display: grid;
+      gap: 15px;
+    }
+
+    label {
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    input,
+    select {
+      display: block;
+      width: 100%;
+      margin-top: 6px;
+      padding: 14px;
+
+      border: 1px solid #cfc5b4;
+      background: white;
+
+      font-size: 15px;
+    }
+
+    button {
+      border: 0;
+      cursor: pointer;
+      padding: 15px;
+
+      background: var(--dourado);
+      color: var(--verde);
+
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    .small-note {
+      font-size: 11px;
+      color: var(--cinza);
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #061a16;
+      color: white;
+      padding: 35px 6%;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: auto;
+
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .footer-slogan {
+      color: var(--dourado);
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 850px) {
+
+      .menu {
+        display: none;
+      }
+
+      .two-columns,
+      .join-grid,
+      .race-columns {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .features {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .feature:nth-child(3n) {
+        border-right: 1px solid var(--linha);
+      }
+
+      .feature:nth-child(2n) {
+        border-right: 0;
+      }
+
+      .news {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 550px) {
+
+      section {
+        padding: 65px 6%;
+      }
+
+      .hero-content {
+        padding: 75px 0;
+      }
+
+      h1 {
+        font-size: 50px;
+      }
+
+      .cards,
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+      .feature {
+        border-right: 0 !important;
+      }
+
+      .feature + .feature {
+        border-top: 0;
+      }
+
+      .distance {
+        font-size: 13px;
+      }
+
+      .nav {
+        padding: 12px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+  <nav class="nav">
+
+    <div class="brand">
+      NÚCLEO SCP DE PENICHE<br>
+      <span>ATLETISMO</span>
+    </div>
+
+    <div class="menu">
+      <a href="#projeto">PROJETO</a>
+      <a href="#equipa">EQUIPA</a>
+      <a href="#provas">PROVAS</a>
+      <a href="#treinos">TREINOS</a>
+      <a href="#noticias">NOTÍCIAS</a>
+      <a href="#eventos">EVENTOS</a>
+      <a href="#comunidade">COMUNIDADE</a>
+      <a class="join-button" href="#junta-te">JUNTA-TE</a>
+    </div>
+
+  </nav>
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <div class="eyebrow">
+      ÉPOCA 2026 / 2027
+    </div>
+
+    <h1>
+      TODOS JUNTOS<br>
+      <span>SOMOS ENORMES.</span>
+    </h1>
+
+    <p class="hero-subtitle">
+      Uma comunidade de atletismo aberta a todos.
+    </p>
+
+    <p class="hero-text">
+      Do primeiro quilómetro aos 42 km.
+      Não importa onde começas.
+      Importa onde podemos chegar juntos.
+    </p>
+
+    <div class="buttons">
+
+      <a class="button button-gold" href="#junta-te">
+        QUERO FAZER PARTE
+      </a>
+
+      <a class="button button-outline" href="#projeto">
+        CONHECER O PROJETO
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= PROJETO ================= -->
+
+<section id="projeto">
+
+  <div class="container">
+
+    <div class="two-columns">
+
+      <div>
+
+        <div class="eyebrow">
+          O PROJETO
+        </div>
+
+        <h2>
+          Mais do que uma equipa.<br>
+          <span>Uma comunidade.</span>
+        </h2>
+
+      </div>
+
+      <div class="large-text">
+
+        <p>
+          O Atletismo do Núcleo SCP de Peniche nasce
+          para criar um espaço onde qualquer pessoa possa
+          correr, evoluir e sentir que pertence a uma comunidade.
+        </p>
+
+        <br>
+
+        <p>
+          Queremos acolher quem está a dar os primeiros passos,
+          quem procura evoluir e quem já vive a corrida há anos.
+        </p>
+
+        <div class="distance">
+          1 KM
+          <span>→</span>
+          5 KM
+          <span>→</span>
+          10 KM
+          <span>→</span>
+          21 KM
+          <span>→</span>
+          42 KM
+        </div>
+
+        <strong>
+          Cada pessoa tem o seu ponto de partida.
+        </strong>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= PARA QUEM ================= -->
+
+<section class="dark">
+
+  <div class="container">
+
+    <div class="eyebrow">
+      PARA QUEM É?
+    </div>
+
+    <h2>
+      Aqui há lugar para todos.
+    </h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>ESTÁS A COMEÇAR?</h3>
+        <p>
+          Ajudamos-te a dar os primeiros passos.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>JÁ CORRES?</h3>
+        <p>
+          Encontra pessoas com quem partilhar objetivos
+          e experiências.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>QUERES EVOLUIR?</h3>
+        <p>
+          Treinos, planos e conhecimento para te ajudar
+          a chegar mais longe.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>ÉS EXPERIENTE?</h3>
+        <p>
+          Partilha experiência e ajuda outros a crescer.
+        </p>
+      </div>
+
+    </div>
+
+    <br><br>
+
+    <p>
+      <strong>
+        Não precisamos de correr ao mesmo ritmo
+        para caminharmos na mesma direção.
+      </strong>
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- ================= PLATAFORMA ================= -->
+
+<section id="treinos">
+
+  <div class="container">
+
+    <div class="eyebrow">
+      A PLATAFORMA
+    </div>
+
+    <h2>
+      Tudo num só lugar.
+    </h2>
+
+    <div class="features">
+
+      <div class="feature">
+        <div class="feature-number">01</div>
+        <h3>PROVAS</h3>
+        <p>
+          Calendário das provas onde o Núcleo
+          estará representado.
+        </p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-number">02</div>
+        <h3>TREINOS</h3>
+        <p>
+          Planos e conteúdos para diferentes
+          níveis e objetivos.
+        </p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-number">03</div>
+        <h3>NOTÍCIAS</h3>
+        <p>
+          Resultados, novidades, atletas,
+          provas e informações importantes.
+        </p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-number">04</div>
+        <h3>EVENTOS</h3>
+        <p>
+          Iniciativas desportivas,
+          sociais e solidárias.
+        </p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-number">05</div>
+        <h3>COMUNIDADE</h3>
+        <p>
+          Fotografias, conquistas e momentos
+          vividos juntos.
+        </p>
+      </div>
+
+      <div class="feature" id="equipa">
+        <div class="feature-number">06</div>
+        <h3>EQUIPA</h3>
+        <p>
+          Conhece os atletas e responsáveis
+          pelo projeto.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= PROVAS ================= -->
+
+<section id="provas" class="dark">
+
+  <div class="container">
+
+    <div class="eyebrow">
+      CALENDÁRIO
+    </div>
+
+    <h2>
+      Onde vamos correr.
+    </h2>
+
+    <div class="race-columns">
+
+      <div class="race-box">
+
+        <h3>
+          MEIAS MARATONAS
+        </h3>
+
+        <p>
+          Meia Maratona de Lisboa ·
+          Meia Maratona de Cascais ·
+          Meia Maratona Ponte Vasco da Gama ·
+          Meia Maratona de Sevilha 🇪🇸 ·
+          Meia Maratona dos Descobrimentos ·
+          Meia Maratona de Aveiro
+        </p>
+
+      </div>
+
+      <div class="race-box">
+
+        <h3>
+          CORRIDAS DE ESTRADA
+        </h3>
+
+        <p>
+          Grande Prémio de Natal ·
+          Corrida da Liberdade ·
+          Bimbo Global Race ·
+          Corrida dos Sinos ·
+          Corrida das Fogueiras ·
+          Corrida pela Vida
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= NOTÍCIAS ================= -->
+
+<section id="noticias">
+
+  <div class="container">
+
+    <div class="eyebrow">
+      NOTÍCIAS
+    </div>
+
+    <h2>
+      O que está a acontecer.
+    </h2>
+
+    <div class="news">
+
+      <article class="news-card">
+
+        <div class="news-date">
+          EM BREVE
+        </div>
+
+        <h3>
+          Apresentação do projeto
+        </h3>
+
+        <p>
+          Conhece o novo projeto de Atletismo
+          do Núcleo SCP de Peniche.
+        </p>
+
+      </article>
+
+
+      <article class="news-card">
+
+        <div class="news-date">
+          ÉPOCA 2026 / 2027
+        </div>
+
+        <h3>
+          Nova equipa
+        </h3>
+
+        <p>
+          Conhece os atletas que vão representar
+          o Núcleo ao longo da época.
+        </p>
+
+      </article>
+
+
+      <article class="news-card">
+
+        <div class="news-date">
+          EM BREVE
+        </div>
+
+        <h3>
+          Novo equipamento
+        </h3>
+
+        <p>
+          A identidade oficial do Atletismo
+          do Núcleo SCP de Peniche.
+        </p>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= EVENTOS ================= -->
+
+<section id="eventos" class="dark">
+
+  <div class="container">
+
+    <div class="community">
+
+      <div class="eyebrow">
+        EVENTOS
+      </div>
+
+      <h2>
+        Mais do que correr.
+      </h2>
+
+      <p>
+        Queremos criar iniciativas que aproximem
+        o Núcleo da comunidade.
+      </p>
+
+      <p>
+        Entre elas está a nossa
+        <strong>Caminhada Solidária</strong>,
+        juntamente com outras ações de carácter
+        social e desportivo.
+      </p>
+
+      <p>
+        <strong>
+          Corremos juntos.
+          Ajudamos juntos.
+          Crescemos juntos.
+        </strong>
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= COMUNIDADE ================= -->
+
+<section id="comunidade">
+
+  <div class="container">
+
+    <div class="community">
+
+      <div class="eyebrow">
+        COMUNIDADE
+      </div>
+
+      <h2>
+        O teu lugar pode ser aqui.
+      </h2>
+
+      <p>
+        Uma comunidade onde cada pessoa pode
+        encontrar o seu espaço, independentemente
+        do seu nível ou experiência.
+      </p>
+
+      <p>
+        Do primeiro quilómetro aos 42 km.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= JUNTA-TE ================= -->
+
+<section id="junta-te" class="join-section">
+
+  <div class="container">
+
+    <div class="join-grid">
+
+      <div>
+
+        <div class="eyebrow">
+          FAZ PARTE
+        </div>
+
+        <h2>
+          O teu primeiro KM<br>
+          <span>pode começar aqui.</span>
+        </h2>
+
+        <p class="large-text">
+          Não precisas de ser atleta.
+          Não precisas de correr 10 km.
+          Não precisas de ter experiência.
+        </p>
+
+        <br>
+
+        <p>
+          <strong>
+            Só precisas de querer começar.
+          </strong>
+        </p>
+
+      </div>
+
+
+      <form>
+
+        <label>
+          Nome
+          <input
+            type="text"
+            name="nome"
+            placeholder="O teu nome"
+            required
+          >
+        </label>
+
+
+        <label>
+          Email
+          <input
+            type="email"
+            name="email"
+            placeholder="O teu email"
+            required
+          >
+        </label>
+
+
+        <label>
+          Contacto
+          <input
+            type="tel"
+            name="contacto"
+            placeholder="Contacto telefónico"
+          >
+        </label>
+
+
+        <label>
+          Experiência atual
+
+          <select name="experiencia">
+
+            <option>
+              Estou a começar
+            </option>
+
+            <option>
+              Até 5 km
+            </option>
+
+            <option>
+              5–10 km
+            </option>
+
+            <option>
+              10–21 km
+            </option>
+
+            <option>
+              Mais de 21 km
+            </option>
+
+          </select>
+
+        </label>
+
+
+        <label>
+          O que procuras?
+
+          <select name="objetivo">
+
+            <option>
+              Começar a correr
+            </option>
+
+            <option>
+              Evoluir
+            </option>
+
+            <option>
+              Participar em provas
+            </option>
+
+            <option>
+              Fazer parte da comunidade
+            </option>
+
+          </select>
+
+        </label>
+
+
+        <button type="submit">
+          QUERO FAZER PARTE
+        </button>
+
+        <p class="small-note">
+          O formulário será ligado ao sistema
+          de contactos do projeto numa próxima fase.
+        </p>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+  <div class="footer-content">
+
+    <div>
+      <strong>
+        NÚCLEO SCP DE PENICHE — ATLETISMO
+      </strong>
+
+      <br>
+
+      ÉPOCA 2026 / 2027
+    </div>
+
+    <div class="footer-slogan">
+      TODOS JUNTOS SOMOS ENORMES.
+    </div>
+
+  </div>
+
+</footer>
+
+</body>
+</html>
